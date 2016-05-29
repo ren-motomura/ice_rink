@@ -2,14 +2,15 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <link href="../css/application.css" rel="stylesheet">
+    <title>IceRink</title>
   </head>
   <body>
-    <div id="root"></div> 
+    <div id="root-container"></div> 
   </body>
 
   <script>
     require("babel-register")({plugins: "transform-react-jsx"});
-    require('../jsx/index.jsx')
+    require('../jsx/application.jsx')
   </script>
 </html>
