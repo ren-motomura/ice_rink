@@ -10,9 +10,9 @@ module.exports = function(grunt) {
         command: (arg) => {
           switch (arg) {
             case 'mac':
-               return 'electron-packager . --platform=darwin --arch=x64'
+               return 'electron-packager . --platform=darwin --arch=x64 --out=build'
             case 'win':
-               return 'electron-packager . --platform=win32 --arch=all'
+               return 'electron-packager . --platform=win32 --arch=all --out=build'
             default:
                return `echo invalid argument! ${arg}`
           }
