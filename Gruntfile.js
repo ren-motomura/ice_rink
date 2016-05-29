@@ -25,5 +25,6 @@ module.exports = function(grunt) {
   grunt.registerTask('run', 'shell:run')
   grunt.registerTask('build-mac', 'shell:build:mac')
   grunt.registerTask('build-win', 'shell:build:win')
+  grunt.registerTask('build-all', ['shell:build:mac', 'shell:build:win'])
 
 };
