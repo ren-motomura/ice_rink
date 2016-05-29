@@ -1,11 +1,11 @@
 const {app, BrowserWindow, ipcMain} = require('electron')
-require('./src/controllers/dispatcher')
+require('./controllers/dispatcher')
 
 let mainWindow
 
 function createWindow () {
   mainWindow = new BrowserWindow({width: 800, height: 600})
-  mainWindow.loadURL(`file://${__dirname}/src/views/html/index.html`)
+  mainWindow.loadURL(`file://${__dirname}/views/html/index.html`)
 
   mainWindow.on('closed', function () {
     mainWindow = null
