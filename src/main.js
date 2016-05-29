@@ -1,5 +1,4 @@
 const {app, BrowserWindow, ipcMain} = require('electron')
-require('./controllers/dispatcher')
 
 let mainWindow
 
