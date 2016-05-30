@@ -2,28 +2,32 @@ body {
   margin: 0;
 }
 
-#application-container {
+/* grid layout */
+
+.application-container {
   display: grid;
   width: 100%;
   height: 100vh;
-  grid-template-rows: 80px 1fr;
-  grid-template-columns: 20% 80%;
+  grid-template-rows: 1fr;
+  grid-template-columns: 180px 1fr;
   grid-template-areas:
-    "header    header"
-    "side-menu main-content"
+    "side-menu main-content";
 }
 
-#header {
-  background: yellow;
-  grid-area: header;
-}
-
-#side-menu {
+.side-menu {
   background: orange;
   grid-area: side-menu;
 }
 
-#main-content {
+.main-content {
   background: green;
   grid-area: main-content;
+}
+
+/* side menu */
+
+.side-menu > .side-menu-title {
+  background: red;
+  width: 100%;
+  text-align: center;
 }
